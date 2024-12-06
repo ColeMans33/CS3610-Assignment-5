@@ -7,3 +7,6 @@ class PDFDocument(Document):
 
   def create(self) -> Self:
     return self
+
+  def __str__(self):
+    return "A PDF Document has been created"

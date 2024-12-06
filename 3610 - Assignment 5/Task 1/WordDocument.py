@@ -7,3 +7,6 @@ class WordDocument(Document):
 
   def create(self) -> Self:
     return self
+
+  def __str__(self):
+    return "A Word Document has been created"

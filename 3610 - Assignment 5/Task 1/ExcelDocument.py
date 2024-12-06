@@ -7,3 +7,6 @@ class ExcelDocument(Document):
 
   def create(self) -> Self:
     return self
+
+  def __str__(self):
+    return "An Excel Document has been created"

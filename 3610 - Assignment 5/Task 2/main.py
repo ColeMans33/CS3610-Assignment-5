@@ -9,12 +9,11 @@ from macCheckBox import MacCheckbox
 from application import Application
 from winFactory import WinFactory
 from macFactory import MacFactory
+from sys import platform
 
-
-operatingSystem = "Windows"
-if operatingSystem == "Windows":
+if platform == "win32":
   factory = WinFactory()
-elif operatingSystem == "Mac":
+elif platform == "darwin":
   factory = MacFactory()
 else:
   raise Exception("I don't know this OS")
